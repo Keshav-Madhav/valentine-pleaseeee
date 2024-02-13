@@ -1,5 +1,3 @@
-const end = Date.now() + 15 * 1000;
-
 // go Buckeyes!
 const colors = ["#bb0000", "#ffffff"];
 
@@ -78,10 +76,7 @@ yesButton.addEventListener('click', () => {
 
   usImg.style.display = 'block';
 
-  if(Date.now() < end) {
-    run();
-    setTimeout(run, 500);
-  }
+  run();
 });
 
 noButton.addEventListener('click', () => {
